@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MojaStronka</title>
+    <link rel="stylesheet" href="stronkastyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e2c93c4335.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>  
+      <a class="nHome" href="#">home</a>
+      <a class="nServices" href="#">services</a>
+      <a class="nTeam" href="#">team</a>
+      <a class="nPortfolio" href="#">portfolio</a>
+      <a class="nContact" href="#">contact</a>
+    </nav>
+
+    <header class="slogan">
+    <div class="bg"> </div>
+    <h1 class="design">design is so <span class="simple">simple</span></h1>
+    </header>  
+
+    <section class="one">
+        <div class=" opis1">
+             <h1>Graphic design</h1>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto obcaecati sapiente eaque nulla quod voluptatum, ratione maxime, necessitatibus dolorum cupiditate itaque perspiciatis fugit ad laboriosam expedita architecto modi nisi alias?
+                     Odio quam nisi aliquam quia voluptate! Enim nihil, commodi corrupti nostrum qui quidem nesciunt distinctio quaerat esse recusandae maiores quo itaque hic vitae omnis cumque. Hic ad aliquam incidunt quos.</p>
+                     <a href="#">See more</a>
+        </div>
+        <div class="grafika1"></div>
+    </section>
+    <section class="two">
+        <div class="grafika2"></div>
+        <div class="opis2">
+            <h1>Architecture</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis sequi alias consequatur dignissimos voluptatum beatae repellendus dolorem velit eveniet unde vel modi placeat voluptates, cumque odio! Facere, aliquid velit!
+            Fuga quia expedita atque libero earum nulla error quisquam deserunt id vitae eius quasi, delectus illum soluta nisi recusandae, consectetur alias voluptatum distinctio ea quae, reiciendis dolorum? Tenetur, molestias explicabo.</p>
+            <a href="#">See more</a>
+        </div>
+    </section>
+    <section class="three">
+        <div class="opis3">
+            <h1>Web development</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis sequi alias consequatur dignissimos voluptatum beatae repellendus dolorem velit eveniet unde vel modi placeat voluptates, cumque odio! Facere, aliquid velit!
+            Fuga quia expedita atque libero earum nulla error quisquam deserunt id vitae eius quasi, delectus illum soluta nisi recusandae, consectetur alias voluptatum distinctio ea quae, reiciendis dolorum? Tenetur, molestias explicabo.</p>
+            <a href="#">See more</a>
+        </div>
+        <div class="grafika3"></div>
+    </section>
+    <section class="team">
+        <h1>Our crazy team</h1>
+        <h2>More than <span>just a job</span> </h2>
+        <div class="gallery">
+            <img src="img5.jpg" alt="">
+            <img src="img11.jpg" alt="">
+            <img src="img7.jpg" alt="">
+            <img src="img8.jpg" alt="">
+            <img src="img9.jpg" alt="">
+            <img src="img10.jpg" alt="">
+        </div>
+    </section>
+    <section class="portfolio">
+        <div>
+            <h1>Limitles imagination</h1>
+            <i class="fas fa-brain"></i>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat totam inventore minima hic, ea repudiandae iure quidem ad quasi, est voluptatibus quas tenetur quo earum harum incidunt ex eligendi magni.</p>
+            <a href="#">See more</a>
+        </div>
+        <div>
+            <h1>Fantastic world</h1>
+            <i class="fas fa-globe-americas"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam eaque voluptas, ut, autem quibusdam reprehenderit repellendus accusantium sapiente illo temporibus quis corporis nobis. Veniam, itaque non. Voluptates, nesciunt delectus?</p>
+            <a href="#">See more</a>
+
+        </div>
+        <div>
+            <h1>Cosmic creativity</h1>
+            <i class="far fa-lightbulb"></i>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo accusantium rerum quas, earum quidem eius similique repellat sed quisquam aperiam quaerat labore, amet quia quam nobis et, veniam impedit.</p>
+            <a href="#">See more</a>
+        </div>
+    </section>
+   <footer>
+       <div>
+           <h1>About us</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio aut numquam accusantium, fugit deserunt nesciunt delectus consectetur, neque impedit, beatae aliquid nobis.</p>
+       </div>
+       <div>
+           <h1>Contact</h1>
+           <p>4096 N Highland St, Arlington
+            VA 32101, USA</p>
+            <p>888-777-666</p>
+       </div>
+       <div>
+           <h1>Media</h1>
+             <p><i class="fab fa-facebook"></i>facebook</p>
+           <p><i class="fab fa-instagram"></i>instagram</p>
+         <p>  <i class="fab fa-twitter"></i>twitter</p>
+    
+       </div>
+   </footer>
+
+   <script src="jquery-3.3.1.min.js"></script>
+   <script>
+
+           $('.nServices').on('click', function () {
+           $('body,html').animate({
+               scrollTop: $('.one').offset().top
+  }, 500)
+           })
+           $('.nTeam').on('click', function () {
+           $('body,html').animate({
+               scrollTop: $('.team').offset().top
+  }, 500)
+           })
+
+           $('.nPortfolio').on('click', function () {
+           $('body,html').animate({
+               scrollTop: $('.portfolio').offset().top
+  }, 500)
+           })
+           $('.nContact').on('click', function () {
+           $('body,html').animate({
+               scrollTop: $('footer').offset().top
+  }, 500)
+           })
+           $('.nHome').on('click', function () {
+           $('body,html').animate({
+               scrollTop: $('header').offset().top
+  }, 500)
+           })
+
+          
+
+     
+
+           
+
+
+
+
+
+
+
+   </script>
+
+</body>
+</html>
